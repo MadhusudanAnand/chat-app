@@ -1,8 +1,28 @@
 {
-  "dependencies": {
-    "express": "^4.17.2",
-    "https": "^1.0.0",
-    "path": "^0.12.7",
-    "socket.io": "^4.4.1"
-  }
+	"dependencies": {
+		"express": "^4.17.2",
+		"https": "^1.0.0",
+		"path": "^0.12.7",
+		"socket.io": "^4.4.1"
+	},
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"name": "chat-app",
+	"version": "1.0.0",
+	"main": "server.js",
+	"devDependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/purplevaruntw/chat-app.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/purplevaruntw/chat-app/issues"
+	},
+	"homepage": "https://github.com/purplevaruntw/chat-app#readme",
+	"description": ""
 }
