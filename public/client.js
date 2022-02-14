@@ -20,6 +20,7 @@ function sendMessage() {
 	if (msg) {
 		socket.emit("msg", { message: msg, user: user });
 	}
+	document.getElementById("message").value = "";
 }
 socket.on("newmsg", function (data) {
 	if (user) {
