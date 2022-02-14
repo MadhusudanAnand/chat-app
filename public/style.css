@@ -15,4 +15,17 @@ body {
 #name {
 	margin-bottom: 20px;
 	margin-top: 20px;
+	border-radius: 10px;
+	border: 2px solid black;
+
+}
+#name:hover{
+	border: 2px solid magenta;
+
+}
+#heading{
+	min-height: 20vh;
+	background-color: silver;
+	padding: 10px;
+	margin-top: 20px;
 }
