@@ -8,10 +8,6 @@ socket.on("userExists", function (data) {
 });
 socket.on("userSet", function (data) {
 	user = data.username;
-	// document.body.innerHTML =
-	// 	'<input type="text" id="message">\
-	//      <button type="button" name="button" onclick="sendMessage()">Send</button>\
-	//      <div id="message-container"></div>';
 	document.getElementById("HOMEPAGE").style.display = "none";
 	document.getElementById("CHATPAGE").style.display = "flex";
 });
