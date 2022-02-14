@@ -14,27 +14,37 @@
 	<script src="/socket.io/socket.io.js"></script>
 	<link rel="stylesheet" href="style.css" />
 	<body>
-		<div id="heading">
-			<h2>Welcome To Chat App</h2>
+		<div id="HOMEPAGE">
+			<div id="heading">
+				<h2>Welcome To Chat App</h2>
+			</div>
+			<div id="error-container"></div>
+			<div id="chat-container">
+				<input
+					id="name"
+					type="text"
+					name="name"
+					value=""
+					placeholder="Enter your name!"
+				/>
+				<button
+					type="button"
+					name="button"
+					onclick="setUsername()"
+					class="btn btn-primary"
+				>
+					Let me chat! &nbsp&nbsp
+					<img src="images/chat.png" alt="" width="40" />
+				</button>
+			</div>
 		</div>
-		<div id="error-container"></div>
-		<div id="chat-container">
-			<input
-				id="name"
-				type="text"
-				name="name"
-				value=""
-				placeholder="Enter your name!"
-			/>
-			<button
-				type="button"
-				name="button"
-				onclick="setUsername()"
-				class="btn btn-primary"
-			>
-				Let me chat! &nbsp&nbsp
-				<img src="images/chat.png" alt="" width="40" />
+
+		<div id="CHATPAGE">
+			<input type="text" id="message" />
+			<button type="button" name="button" onclick="sendMessage()">
+				Send New Message
 			</button>
+			<div id="message-container"></div>
 		</div>
 	</body>
 </html>

@@ -1,7 +1,14 @@
 #error-container {
 	color: red;
 }
-body {
+#CHATPAGE {
+	display: none;
+	margin: 20px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+#HOMEPAGE {
 	display: flex;
 	margin: 20px;
 	justify-content: center;
