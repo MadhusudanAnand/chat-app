@@ -2,3 +2,7 @@ fileignoreconfig:
     - filename: index.html
       checksum: 00d711265d9a4a083996655a8c250318e01cd3bf54dd392e8193813a7755982f
 version: ""
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 77334fc062f1327d8a7d50bb7cd5c53e39b8395aca864d538a6634f8388bc80c
+version: ""
