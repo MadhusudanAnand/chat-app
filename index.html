@@ -22,7 +22,7 @@
 					placeholder="Enter your name!"
 				/>
 				<button
-					type="button"
+					type="submit"
 					name="button"
 					onclick="setUsername()"
 					class="btn btn-primary"
@@ -34,9 +34,10 @@
 		</div>
 
 		<div id="CHATPAGE">
+			<h3 id="currentUser"></h3>
 			<input type="text" id="message" />
 			<button
-				type="button"
+				type="submit"
 				name="button"
 				onclick="sendMessage()"
 				class="btn btn-success"

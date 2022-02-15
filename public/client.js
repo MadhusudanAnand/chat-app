@@ -10,6 +10,8 @@ socket.on("userSet", function (data) {
 	user = data.username;
 	document.getElementById("HOMEPAGE").style.display = "none";
 	document.getElementById("CHATPAGE").style.display = "flex";
+	document.getElementById("currentUser").innerHTML =
+		"You are signed in as " + user;
 });
 function sendMessage() {
 	var msg = document.getElementById("message").value;
