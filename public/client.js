@@ -27,5 +27,14 @@ socket.on("newmsg", function (data) {
 	}
 	if (data.user !== user) {
 		alert("you have recieved a msg!");
+		play1();
 	}
 });
+function play1() {
+                  
+	/* Audio link for notification */
+	var mp3 = '<source src="notification.wav" type="audio/mpeg">';
+	document.getElementById("sound").innerHTML = 
+	'<audio autoplay="autoplay">' + mp3 + "</audio>";
+}
+
