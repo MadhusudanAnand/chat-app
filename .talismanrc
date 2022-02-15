@@ -10,3 +10,7 @@ fileignoreconfig:
 - filename: package-lock.json
   checksum: 7e45402331fa4a7ee215e74a41ce698db612cac89332ec84ffb0f87eaf101f07
 version: ""
+fileignoreconfig:
+- filename: public/bootstrap.min.css
+  checksum: 53f06fa45a7efac27bd0ed95fb0f73bb74b754fe6a6f2409347d43d8ee73cd4b
+version: ""
