@@ -22,8 +22,22 @@ function sendMessage() {
 }
 socket.on("newmsg", function (data) {
 	if (user) {
-		document.getElementById("message-container").innerHTML +=
-			"<div><b>" + data.user + "</b>: " + data.message + "</div>";
+		var newMessage = document.createElement("div");
+
+		if (data.user === user) {
+			newMessage.innerHTML = "<div>" + data.message + "</div>";
+			newMessage.style.textAlign = "right";
+		} else {
+			newMessage.innerHTML =
+				"<div>" +
+				"<b>" +
+				data.user +
+				"</b> : " +
+				data.message +
+				"</div>";
+			newMessage.style.textAlign = "left";
+		}
+		document.getElementById("message-container").appendChild(newMessage);
 	}
 	if (data.user !== user) {
 		alert("you have recieved a msg!");
@@ -31,10 +45,8 @@ socket.on("newmsg", function (data) {
 	}
 });
 function play1() {
-                  
 	/* Audio link for notification */
 	var mp3 = '<source src="notification.wav" type="audio/mpeg">';
-	document.getElementById("sound").innerHTML = 
-	'<audio autoplay="autoplay">' + mp3 + "</audio>";
+	document.getElementById("sound").innerHTML =
+		'<audio autoplay="autoplay">' + mp3 + "</audio>";
 }
-
