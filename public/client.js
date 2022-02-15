@@ -23,4 +23,7 @@ socket.on("newmsg", function (data) {
 		document.getElementById("message-container").innerHTML +=
 			"<div><b>" + data.user + "</b>: " + data.message + "</div>";
 	}
+	if (data.user !== user) {
+		alert("you have recieved a msg!");
+	}
 });
