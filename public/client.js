@@ -25,7 +25,11 @@ socket.on("newmsg", function (data) {
 		var newMessage = document.createElement("div");
 
 		if (data.user === user) {
-			newMessage.innerHTML = "<div>" + data.message + "</div>";
+			newMessage.innerHTML =
+				"<div>" +
+				data.message +
+				'<img width="40" src="images\\user-icon.png"/>' +
+				"</div>";
 			newMessage.style.textAlign = "right";
 		} else {
 			newMessage.innerHTML =
@@ -36,6 +40,7 @@ socket.on("newmsg", function (data) {
 				data.message +
 				"</div>";
 			newMessage.style.textAlign = "left";
+			newMessage.style.color = "black";
 		}
 		document.getElementById("message-container").appendChild(newMessage);
 	}
