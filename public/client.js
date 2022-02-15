@@ -20,6 +20,12 @@ function sendMessage() {
 	}
 	document.getElementById("message").value = "";
 }
+document.getElementById("chat-container").onsubmit = () => {
+	return false;
+};
+document.getElementById("CHATPAGE").onsubmit = () => {
+	return false;
+};
 socket.on("newmsg", function (data) {
 	if (user) {
 		var newMessage = document.createElement("div");

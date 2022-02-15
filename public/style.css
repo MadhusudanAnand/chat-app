@@ -62,3 +62,15 @@
 	width: 800px;
 	font-size: 20px;
 }
+.about {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* background: red; */
+	margin-top: 200px;
+}
+body {
+	min-height: 80vh;
+	/* background: blue; */
+}
